@@ -1,0 +1,16 @@
+BACKEND
+cd backend
+cp .env.example .env
+pip install -r requirements.txt
+python -m nltk.downloader vader_lexicon
+uvicorn main:app --reload
+
+FRONTEND
+cd frontend
+cp .env.example .env
+npm install
+npm run dev
+
+DEMO DATA
+cd backend
+python seed_demo.py

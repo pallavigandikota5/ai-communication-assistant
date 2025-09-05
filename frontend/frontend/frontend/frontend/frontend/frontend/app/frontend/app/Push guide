@@ -1,0 +1,8 @@
+mkdir ai-communication-assistant && cd $_
+# create files/folders above
+git init
+git add .
+git commit -m "AI Communication Assistant: backend (FastAPI) + frontend (Next.js)"
+git branch -M main
+git remote add origin https://github.com/<you>/ai-communication-assistant.git
+git push -u origin main
